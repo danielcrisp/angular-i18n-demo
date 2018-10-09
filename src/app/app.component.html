@@ -1,0 +1,34 @@
+<div class="wrapper">
+  <div class="meta">
+    <div class="meta__title">
+      Current value
+    </div>
+    <div class="meta__intro">
+      <p>Yesterday's closing value was {{ closingValue | currency }}, which is an all-time-high.</p>
+      <p>There {watchers, plural, =0 {is nobody} =1 {is one person} =2 {are two people} other {are {{ watchers }} people}} watching right now.</p>
+    </div>
+  </div>
+  <div class="card">
+
+    <div class="card__info">
+      The value {trend$ | async, select, up {increased} down {decreased} stable {didn't change}}.
+    </div>
+
+    <div class="card__value">
+      {{ value$ | async | currency }}
+    </div>
+
+    <div class="card__info">
+      Transactions: {{ transactions$ | async | number }}
+    </div>
+
+  </div>
+  <div class="meta">
+    <div class="meta__info">
+      {{ now$ | async | date:'fullDate' }}
+    </div>
+    <div class="meta__time">
+      {{ now$ | async | date:'mediumTime' }}
+    </div>
+  </div>
+</div>
