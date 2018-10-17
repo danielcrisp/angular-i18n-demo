@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
   <file source-language="ar-IQ" datatype="plaintext" original="ng2.template">
+
     <body>
       <trans-unit id="title" datatype="html">
         <source>
-      Current value
-    </source>
+        Current value
+        </source>
+        <target>
+          Current value
+        </target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/app.component.html</context>
           <context context-type="linenumber">3</context>
@@ -14,7 +18,10 @@
         <note priority="1" from="meaning">Card title</note>
       </trans-unit>
       <trans-unit id="closingValue" datatype="html">
-        <source>Yesterday&apos;s closing value was <x id="INTERPOLATION" equiv-text="{{ closingValue | currency:&apos;GBP&apos; }}"/>.</source>
+        <source>Yesterday&apos;s closing value was
+        <x id="INTERPOLATION" equiv-text="{{ closingValue | currency:&apos;GBP&apos; }}" />.</source>
+        <target>Yesterday&apos;s closing value was
+          <x id="INTERPOLATION" equiv-text="{{ closingValue | currency:&apos;GBP&apos; }}" />.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/app.component.html</context>
           <context context-type="linenumber">7</context>
@@ -23,7 +30,10 @@
         <note priority="1" from="meaning">Closing value</note>
       </trans-unit>
       <trans-unit id="watchers" datatype="html">
-        <source>There <x id="ICU" equiv-text="{watchers, plural, =0 {...} =1 {...} =2 {...} other {...}}"/> watching right now.</source>
+        <source>There
+        <x id="ICU" equiv-text="{watchers, plural, =0 {...} =1 {...} =2 {...} other {...}}" /> watching right now.</source>
+        <target>There
+          <x id="ICU" equiv-text="{watchers, plural, =0 {...} =1 {...} =2 {...} other {...}}" /> watching right now.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/app.component.html</context>
           <context context-type="linenumber">8</context>
@@ -32,7 +42,10 @@
         <note priority="1" from="meaning">Watchers</note>
       </trans-unit>
       <trans-unit id="8b5f0af01feffd0c5679ff980f75e07a2599228b" datatype="html">
-        <source>{VAR_PLURAL, plural, =0 {is nobody} =1 {is one person} =2 {are two people} other {are <x id="INTERPOLATION" equiv-text="{{ watchers }}"/> people} }</source>
+        <source>{VAR_PLURAL, plural, =0 {is nobody} =1 {is one person} =2 {are two people} other {are
+        <x id="INTERPOLATION" equiv-text="{{ watchers }}" /> people} }</source>
+        <target>{VAR_PLURAL, plural, =0 {is nobody} =1 {is one person} =2 {are two people} other {are
+          <x id="INTERPOLATION" equiv-text="{{ watchers }}" /> people} }</target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/app.component.html</context>
           <context context-type="linenumber">8</context>
@@ -40,8 +53,13 @@
       </trans-unit>
       <trans-unit id="trend" datatype="html">
         <source>
-      The value <x id="ICU" equiv-text="{trend$ | async, select, up {...} down {...} stable {...}}"/>.
-    </source>
+        The value
+        <x id="ICU" equiv-text="{trend$ | async, select, up {...} down {...} stable {...}}" />.
+        </source>
+        <target>
+        The value
+        <x id="ICU" equiv-text="{trend$ | async, select, up {...} down {...} stable {...}}" />.
+        </target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/app.component.html</context>
           <context context-type="linenumber">13</context>
@@ -51,6 +69,7 @@
       </trans-unit>
       <trans-unit id="48635b17c155b6ab21a40d4d0790fd6686abc03f" datatype="html">
         <source>{VAR_SELECT, select, up {increased} down {decreased} stable {didn&apos;t change} }</source>
+        <target>{VAR_SELECT, select, up {increased} down {decreased} stable {didn&apos;t change} }</target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/app.component.html</context>
           <context context-type="linenumber">14</context>
@@ -58,8 +77,13 @@
       </trans-unit>
       <trans-unit id="transactions" datatype="html">
         <source>
-      Transactions: <x id="INTERPOLATION" equiv-text="{{ transactions$ | async | number }}"/>
-    </source>
+        Transactions:
+        <x id="INTERPOLATION" equiv-text="{{ transactions$ | async | number }}" />
+        </source>
+        <target>
+          Transactions:
+          <x id="INTERPOLATION" equiv-text="{{ transactions$ | async | number }}" />
+        </target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/app.component.html</context>
           <context context-type="linenumber">21</context>
