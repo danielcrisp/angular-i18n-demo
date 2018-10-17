@@ -1,4 +1,4 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Component, Inject, LOCALE_ID, HostBinding, OnInit, OnDestroy } from '@angular/core';
 
 import { Observable, timer, of, Subscription } from 'rxjs';
 import { switchMap, startWith, share } from 'rxjs/operators';
@@ -11,6 +11,8 @@ type Trend = 'up' | 'down' | 'stable';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit, OnDestroy {
+
+  @HostBinding('attr.dir') dir = 'ltr';
 
   // Different data streams
   now$: Observable<number>;
@@ -25,7 +27,13 @@ export class AppComponent implements OnInit, OnDestroy {
 
   private subscription = Subscription.EMPTY;
 
+  constructor (@Inject(LOCALE_ID) private locale: string) {}
+
   ngOnInit () {
+
+    if (this.locale.startsWith('ar')) {
+      this.dir = 'rtl';
+    }
 
     //
     // DATES
