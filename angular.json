@@ -13,7 +13,11 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/angular-i18n-demo",
+            "outputPath": "dist/angular-i18n-demo/en-GB",
+            "i18nLocale": "en-GB",
+            "deployUrl": "/en-GB/",
+            "baseHref": "/en-GB/",
+            "aot": true,
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -44,6 +48,14 @@
               "extractLicenses": true,
               "vendorChunk": false,
               "buildOptimizer": true
+            },
+            "ar-IQ": {
+              "baseHref": "/ar-IQ/",
+              "deployUrl": "/ar-IQ/",
+              "outputPath": "dist/angular-i18n-demo/ar-IQ",
+              "i18nFile": "src/locale/messages.ar-IQ.xlf",
+              "i18nFormat": "xlf",
+              "i18nLocale": "ar-IQ"
             }
           }
         },
