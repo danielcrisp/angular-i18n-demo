@@ -31,9 +31,8 @@
       <trans-unit id="watchers" datatype="html">
         <source>There
         <x id="ICU" equiv-text="{watchers, plural, =0 {...} =1 {...} =2 {...} other {...}}" /> watching right now.</source>
-        <target>There
-          <x id="ICU" equiv-text="{watchers, plural, =0 {...} =1 {...} =2 {...} other {...}}" /> watching right now.</target>
-        <context-group purpose="location">
+        <target>
+        <x id="ICU" equiv-text="{watchers, plural, =0 {...} =1 {...} =2 {...} other {...}}" /> أشاهد الآن</target>        <context-group purpose="location">
           <context context-type="sourcefile">app/app.component.html</context>
           <context context-type="linenumber">8</context>
         </context-group>
@@ -43,9 +42,9 @@
       <trans-unit id="8b5f0af01feffd0c5679ff980f75e07a2599228b" datatype="html">
         <source>{VAR_PLURAL, plural, =0 {is nobody} =1 {is one person} =2 {are two people} other {are
         <x id="INTERPOLATION" equiv-text="{{ watchers }}" /> people} }</source>
-        <target>{VAR_PLURAL, plural, =0 {is nobody} =1 {is one person} =2 {are two people} other {are
-          <x id="INTERPOLATION" equiv-text="{{ watchers }}" /> people} }</target>
-        <context-group purpose="location">
+        <target>{VAR_PLURAL, plural, =0 {لا يوجد أحد} =1 {هناك شخص واحد} =2 {هناك شخصان} other {هناك
+        <x id="INTERPOLATION" equiv-text="{{ watchers }}" /> شخصا} }</target>
+       <context-group purpose="location">
           <context context-type="sourcefile">app/app.component.html</context>
           <context context-type="linenumber">8</context>
         </context-group>
@@ -56,7 +55,7 @@
         <x id="ICU" equiv-text="{trend$ | async, select, up {...} down {...} stable {...}}" />.
         </source>
         <target>
-        The value
+        القيمة
         <x id="ICU" equiv-text="{trend$ | async, select, up {...} down {...} stable {...}}" />.
         </target>
         <context-group purpose="location">
@@ -68,7 +67,7 @@
       </trans-unit>
       <trans-unit id="48635b17c155b6ab21a40d4d0790fd6686abc03f" datatype="html">
         <source>{VAR_SELECT, select, up {increased} down {decreased} stable {didn&apos;t change} }</source>
-        <target>{VAR_SELECT, select, up {increased} down {decreased} stable {didn&apos;t change} }</target>
+        <target>{VAR_SELECT, select, up {زيادة} down {انخفض} stable {لم يتغير} }</target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/app.component.html</context>
           <context context-type="linenumber">14</context>
@@ -80,8 +79,8 @@
         <x id="INTERPOLATION" equiv-text="{{ transactions$ | async | number }}" />
         </source>
         <target>
-          Transactions:
-          <x id="INTERPOLATION" equiv-text="{{ transactions$ | async | number }}" />
+        المعاملات
+        <x id="INTERPOLATION" equiv-text="{{ transactions$ | async | number }}" />
         </target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/app.component.html</context>
