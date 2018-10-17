@@ -49,6 +49,29 @@
               "vendorChunk": false,
               "buildOptimizer": true
             },
+            "production-ar-IQ": {
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "aot": true,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "baseHref": "/ar-IQ/",
+              "deployUrl": "/ar-IQ/",
+              "outputPath": "dist/angular-i18n-demo/ar-IQ",
+              "i18nFile": "src/locale/messages.ar-IQ.xlf",
+              "i18nFormat": "xlf",
+              "i18nLocale": "ar-IQ"
+            },
             "ar-IQ": {
               "baseHref": "/ar-IQ/",
               "deployUrl": "/ar-IQ/",
