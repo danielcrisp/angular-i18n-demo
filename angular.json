@@ -91,6 +91,10 @@
             "production": {
               "browserTarget": "angular-i18n-demo:build:production"
             },
+            "production-ar-IQ": {
+              "browserTarget": "angular-i18n-demo:build:production-ar-IQ",
+              "servePath": "/ar-IQ/"
+            },
             "ar-IQ": {
               "browserTarget": "angular-i18n-demo:build:ar-IQ",
               "servePath": "/ar-IQ/"
