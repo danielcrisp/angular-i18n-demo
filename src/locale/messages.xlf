@@ -22,6 +22,22 @@
         <note priority="1" from="description">Value when the market closed yesterday</note>
         <note priority="1" from="meaning">Closing value</note>
       </trans-unit>
+      <trans-unit id="watchers" datatype="html">
+        <source>There <x id="ICU" equiv-text="{watchers, plural, =0 {...} =1 {...} =2 {...} other {...}}"/> watching right now.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+        <note priority="1" from="description">Number of people watching the value</note>
+        <note priority="1" from="meaning">Watchers</note>
+      </trans-unit>
+      <trans-unit id="8b5f0af01feffd0c5679ff980f75e07a2599228b" datatype="html">
+        <source>{VAR_PLURAL, plural, =0 {is nobody} =1 {is one person} =2 {are two people} other {are <x id="INTERPOLATION" equiv-text="{{ watchers }}"/> people} }</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
     </body>
   </file>
 </xliff>
