@@ -2,6 +2,71 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
   <file source-language="ar-IQ" datatype="plaintext" original="ng2.template">
     <body>
+      <trans-unit id="title" datatype="html">
+        <source>
+      Current value
+    </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+        <note priority="1" from="description">Value at this moment in time</note>
+        <note priority="1" from="meaning">Card title</note>
+      </trans-unit>
+      <trans-unit id="closingValue" datatype="html">
+        <source>Yesterday&apos;s closing value was <x id="INTERPOLATION" equiv-text="{{ closingValue | currency:&apos;GBP&apos; }}"/>.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+        <note priority="1" from="description">Value when the market closed yesterday</note>
+        <note priority="1" from="meaning">Closing value</note>
+      </trans-unit>
+      <trans-unit id="watchers" datatype="html">
+        <source>There <x id="ICU" equiv-text="{watchers, plural, =0 {...} =1 {...} =2 {...} other {...}}"/> watching right now.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+        <note priority="1" from="description">Number of people watching the value</note>
+        <note priority="1" from="meaning">Watchers</note>
+      </trans-unit>
+      <trans-unit id="8b5f0af01feffd0c5679ff980f75e07a2599228b" datatype="html">
+        <source>{VAR_PLURAL, plural, =0 {is nobody} =1 {is one person} =2 {are two people} other {are <x id="INTERPOLATION" equiv-text="{{ watchers }}"/> people} }</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="trend" datatype="html">
+        <source>
+      The value <x id="ICU" equiv-text="{trend$ | async, select, up {...} down {...} stable {...}}"/>.
+    </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+        <note priority="1" from="description">Describes the value change trend</note>
+        <note priority="1" from="meaning">Value trend</note>
+      </trans-unit>
+      <trans-unit id="48635b17c155b6ab21a40d4d0790fd6686abc03f" datatype="html">
+        <source>{VAR_SELECT, select, up {increased} down {decreased} stable {didn&apos;t change} }</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="transactions" datatype="html">
+        <source>
+      Transactions: <x id="INTERPOLATION" equiv-text="{{ transactions$ | async | number }}"/>
+    </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+        <note priority="1" from="description">Number of transactions today</note>
+        <note priority="1" from="meaning">Transactions count</note>
+      </trans-unit>
     </body>
   </file>
 </xliff>
