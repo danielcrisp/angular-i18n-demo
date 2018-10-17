@@ -13,6 +13,15 @@
         <note priority="1" from="description">Value at this moment in time</note>
         <note priority="1" from="meaning">Card title</note>
       </trans-unit>
+      <trans-unit id="closingValue" datatype="html">
+        <source>Yesterday&apos;s closing value was <x id="INTERPOLATION" equiv-text="{{ closingValue | currency:&apos;GBP&apos; }}"/>.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+        <note priority="1" from="description">Value when the market closed yesterday</note>
+        <note priority="1" from="meaning">Closing value</note>
+      </trans-unit>
     </body>
   </file>
 </xliff>
